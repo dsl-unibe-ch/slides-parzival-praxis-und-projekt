@@ -134,7 +134,7 @@ CSP: _Code sharing platform_
 
 |||
 |:--:|:--:|
-|Problem|Zur Publikation werden spezifische Datenrepräsentationen benötigt. Gleichzeitig sind wir nicht in der Lage, maßgefertigte dynamische Systeme langfristig am Laufen zu halten.|
+|Problem|Zur Publikation werden spezifische Datenrepräsentationen benötigt. Gleichzeitig sind wir nicht in der Lage, massgefertigte dynamische Systeme langfristig am Laufen zu halten.|
 |Ansatz|Vorabgenerierung von Intermediär- und Distributionsformaten für Transkriptionen, Annotationen und andere Projektressourcen.|
 |CSP (GitHub)|Bereitstellung der Ergebnisse der Generierungspipelines (XProc, XSLT) als **GitHub Page** („static API“).|
 
@@ -162,7 +162,7 @@ CSP: _Code sharing platform_
 
 </div>
 
-### ` Data publication ` statisch heißt stetig
+### ` Data publication ` statisch heisst stetig
 
 |||
 |:--:|:--:|
