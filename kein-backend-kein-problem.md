@@ -94,8 +94,8 @@ CSP: _Code sharing platform_
 ## Anwendungsgebiete
 
 - Project management
-- Data generation
-- Data management
+- ~~Data generation~~
+- ~~Data management~~
 - Data provision
 - Data publication
 
@@ -353,7 +353,7 @@ export const prerender = true;
 
 (ohne Bilder; diese werden clientseitig direkt vom IIIF-Server der Universitätsbibliothek eingebunden)
 
-[dhbern.github.io/presentation_parzival](https://dhbern.github.io/presentation_parzival/)
+[parzival.unibe.ch](https://parzival.unibe.ch/)
 
 ---
 Vorteile
