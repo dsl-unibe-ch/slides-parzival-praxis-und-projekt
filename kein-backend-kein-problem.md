@@ -1,4 +1,4 @@
-# Kein Backend, kein Problem! <br/>Wie bringen wir Inhalte lange ins Netz?
+# Kein Backend, kein Problem: <br/>Mit dem Popup-Publisher
 
 <div style="align-self: start;">
 Universität Bern, Aktuelle digitale Editionen höfischer
@@ -45,20 +45,11 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 
 ---
 
-## Struktur und Rollen
+## Struktur am DSL
 
 * Team von 5-7 KollegInnen
 * Zuständig für den Bereich *Digital Humanities*
 * Zurzeit betreuen wir gut 30 Projekte (laufend oder in Planung)
-
----
-
-## Aktuelle Beispiele
-
-|||
-|:--:|:--:|
-|![Digital Scholarly Edition Annemarie Schwarzenbach; Söldnerbiographien Neues Museum Biel](img/dseas-nmb.png)|![République des Lettres (Herbar-Datenedition); Parzival](img/rdl-parzival.png)|
-
 
 ---
 
@@ -129,158 +120,6 @@ CSP: _Code sharing platform_
 ---
 
 [![issues in the parzival project](img/project-management-issue.png)](https://github.com/DHBern/presentation_parzival/issues/108)
----
-  
-<div class="footer" data-marked="1">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-### ` Project management ` Kanban Boards
-
-|||
-|:--:|:--:|
-|Problem|Mangelnde Übersicht über viele Issues und  daran arbeitende Personen.|
-|Ansatz|Wir erstellen Kanban Boards.|
-|CSP (GitHub)|GitHub **kanban boards**|
-|Grenzen|Zu umfassendem Projektmanagement fehlen einige Features (Zeiterfassung, projektübergreifende Übersicht etc.).|
-
----
-
-![github project of parzival](img/project-management-kanban.png)
----
-  
-<div class="footer" data-marked="2">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-### ` Data generation ` Einheitliche IIIF-Manifeste
-
-|||
-|:--:|:--:|
-|Problem|Projekte kombinieren häufig Bildressourcen von verschiedenen Anbietern|
-|Ansatz|Wir erstellen „Meta“-Manifeste, die auf diese Ressourcen verweisen. Diese Manifeste werden a) zur weiteren Verarbeitung und b) zur Präsentation verwendet.|
-|CSP (GitHub)|Manifest Generierung aus YAML-Dateien per **commit**.|
-
----
-  
-<div class="footer" data-marked="2">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-|||
-|:--:|:--:|
-|[![Generierung von IIIF-Manifesten ab YAML-Dateien durch Git Commits](img/data-generation-iiif-manifests.png)]() | ![Resultat der Manifest-Generierung](img/data-generation-iiif-manifest-index.png)|
-
----
-  
-<div class="footer" data-marked="2">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-### ` Data generation ` Import auf Transkriptionsplattformen
-
-|||
-|:--:|:--:|
-|Problem|Das Hochladen von Bildern (z. B. zu Transkribus) ist oft mühsam — Beschaffung der Bilder, Upload, Nachverfolgung von Dateinamen/IDs, Zugriffsfreigaben usw.|
-|Ansatz|Wir nutzen die zuvor erzeugten IIIF‑Manifeste, um den gesamten Workflow zu automatisieren.|
-|CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe der Manifeste sowie einer Ziel‑Collection holt eine GitHub‑Action die IIIF‑Bilder und lädt sie zu Transkribus hoch.|
-
----
-  
-<div class="footer" data-marked="2">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-|||
-|:--:|:--:|
-|[![Uploading IIIF images to Transkribus by GitHub issue](img/data-generation-transkribus-upload.png)]() | ![Result of the Transkribus upload](img/data-generation-transkribus-upload-done.png)|
-
----
-  
-<div class="footer" data-marked="2">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-### ` Data generation ` Export aus Transkriptionsplattformen und Daten-Transformationen
-
-|||
-|:--:|:--:|
-|Problem|Das Exportieren von Transkriptionen aus Transkribus kann knifflig sein, da die Plattform unterschiedliche Dateinamen verwendet und die eingebauten Transformationen nicht den Projektanforderungen entsprechen.|
-|Ansatz|Nutzung von Projekt‑IDs und den zuvor erzeugten IIIF‑Manifests, um Transkriptionen gemäß den Projektvorgaben zu exportieren und zu transformieren.|
-|CSP (GitHub)|Durch das Öffnen eines **issue** und die Angabe einer Dokument‑ID holt eine GitHub‑Action die Transkriptionen, ordnet die korrekten Bilddateinamen zu und wendet projektspezifische strukturelle Transformationen an.|
-
----
-  
-<div class="footer" data-marked="2">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-|||
-|:--:|:--:|
-|[![Exporting transcriptions from Transkribus by GitHub issue](img/data-generation-transkribus-export.png)]() | ![Result of the manifest generation](img/data-generation-transkribus-export-done.png)|
-
-
----
-  
-<div class="footer" data-marked="3">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-### ` Data management ` Versionierung von Textdaten
-
-|||
-|:--:|:--:|
-|Problem|TEI-Dateien werden während der manuellen Bearbeitung und Annotation auf einem Server gespeichert. Änderungen und Projektfortschritt lassen sich nicht ohne erheblichen Mehraufwand für die Editierenden verfolgen.|
-|Ansatz|Automatisierte Versionskontrolle (Git) zur Nachverfolgung von Änderungen und als zusätzliche Sicherung.|
-|CSP (GitHub)|In festgelegten Intervallen (z. B. alle 6 Stunden) werden alle veränderten Dateien abgeholt und per **scheduled action** im GitHub-Repository gesichert.|
-|Grenzen|Commits bilden zeitliche Schnappschüsse ab, nicht Aufgaben oder Workflow‑Schritte.|
-
----
-  
-<div class="footer" data-marked="3">
-
-||||||
-|:--:|:--:|:--:|:--:|:--:|
-| project management | data generation | data management | data provision | data publication |
-
-</div>
-
-|||
-|:--:|:--:|
-|[![Frequent data commits in scheduled action.](img/data-management-scheduled-backup.png)]() | ![Scheduled commits](img/data-management-backup-commits.png)|
-
 ---
   
 <div class="footer" data-marked="4">
@@ -533,4 +372,4 @@ Nachteile
 - keine voll ausgereifte API
 ---
 
-Danke für die Aufmerksamkeit.
+Danke für Ihre Aufmerksamkeit.
