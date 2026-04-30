@@ -7,7 +7,7 @@ Literatur des Mittelalters, 01.05.2026
 <img src="img/university-of-bern-bern.png" alt="unibe logo" class="bg" style="width: 200px; left:0; top:-10px;"/>
 
 
-<p class="bg bt-left"><a href="mailto:peter.daengeli@unibe.ch">Peter Dängeli</a>, <a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
+<p class="bg bt-left"><a href="mailto:sebastian.flick@unibe.ch">Sebastian Flick</a></p>
 <p class="bg bt-right"><a href="https://dsl.unibe.ch" target="_blank">Data Science Lab</a>, <a href="https://dh.unibe.ch" target="_blank">Digital Humanities</a>, Universität Bern</p>
 
 <style>
@@ -368,7 +368,7 @@ Vorteile
 Nachteile
 
 - keine Server-seitige Suche möglich (client-seitig schon)
-- lange build-Zeiten (4h)
+- lange build-Zeiten (~2h)
 - keine voll ausgereifte API
 ---
 
