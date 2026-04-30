@@ -1,7 +1,8 @@
 # Kein Backend, kein Problem! <br/>Wie bringen wir Inhalte lange ins Netz?
 
 <div style="align-self: start;">
-Universität Rostock, Ringvorlesung „Digital Humanities im Fokus: Methoden, Anwendungen und Perspektiven“, 12.01.2026
+Universität Bern, Aktuelle digitale Editionen höfischer
+Literatur des Mittelalters, 01.05.2026
 </div>
 <img src="img/university-of-bern-bern.png" alt="unibe logo" class="bg" style="width: 200px; left:0; top:-10px;"/>
 
@@ -30,7 +31,7 @@ Universität Rostock, Ringvorlesung „Digital Humanities im Fokus: Methoden, An
 
 ---
 Link zu dieser Präsentation:
-[https://dsl-unibe-ch.github.io/kein-backend-kein-problem](https://dsl-unibe-ch.github.io/kein-backend-kein-problem)
+[https://dsl-unibe-ch.github.io/slides-parzival-praxis-und-projekt/](https://dsl-unibe-ch.github.io/slides-parzival-praxis-und-projekt/)
 
 ![qr-code](img/qr.png)
 
@@ -47,14 +48,8 @@ https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
 ## Struktur und Rollen
 
 * Team von 5-7 KollegInnen
-* Zuständig für den Bereich *Digital Humanities* (aka *DRUIDS*, "Digital Research, User Interfaces and Data Science for the Humanities")
+* Zuständig für den Bereich *Digital Humanities*
 * Zurzeit betreuen wir gut 30 Projekte (laufend oder in Planung)
-* Übergreifende Koordination durch einen Domänenleiter
-
----
-## DH-Projekte am DSL, 2026
-
-![DH-Projekte am DSL, 2026](img/dsl-dh-projects.png)
 
 ---
 

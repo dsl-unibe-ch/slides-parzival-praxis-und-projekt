@@ -1,7 +1,7 @@
 {
   "name": "kein-backend-kein-problem",
   "version": "0.0.1",
-  "description": "Slides for the Proto4DigEd Workshop 2024",
+  "description": "Slides für die Ringvorlesung Aktuelle digitale Editionen höfischer Literatur des Mittelalters an der Universität Bern, Mai 2026",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
