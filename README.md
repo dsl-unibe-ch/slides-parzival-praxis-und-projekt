@@ -1,6 +1,6 @@
 # kein-backend-kein-problem
 
-Presentation für die Ringvorlesung "Digital Humanities im Fokus: Methoden, Anwendungen und Perspektiven" an der Universität Rostock im Wintersemester 2025/26.
+Folien für den Vortrag "Kein Backend, kein Problem! Wie bringen wir Inhalte lange ins Netz?" - Ringvorlesung Uni Bern Aktuelle digitale Editionen höfischer Literatur des Mittelalters Mai 2026.
 
 ## Installation and usage
 
