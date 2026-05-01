@@ -41,7 +41,7 @@ Link zu dieser Präsentation:
 
 <img alt="Data Science Lab, Universität Bern" src="img/dsl-site.png"/>
 
-https://dsl.unibe.ch | https://github.com/dsl-unibe-ch
+https://dsl.unibe.ch | [support.dsl@unibe.ch](mailto:support.dsl@unibe.ch)
 
 ---
 
